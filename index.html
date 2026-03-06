@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escape Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- START SCREEN -->
+  <div class="screen" id="startScreen">
+    <img class="bg" src="background1.png">
+    <img class="btn" id="startBtn" src="start_button.png">
+  </div>
+
+  <!-- BACKGROUND 1 -->
+  <div class="screen hidden" id="bg1">
+    <img class="bg" src="background2.png">
+    <img class="btn" id="nextBtn" src="next_button.png">
+  </div>
+
+  <!-- BACKGROUND 2 -->
+  <div class="screen hidden" id="bg2">
+    <img class="bg" src="background3.png">
+    <img class="btn" id="hintBtn" src="hint_button.png">
+    <p id="hintText" class="hidden">
+Previous Rooms... <br>
+MAKE SURE THE CODE IS WRITTEN IN ALL CAPS <br>
+Your Answer is Around the School
+</p>
+  </div>
+
+  <!-- BACKGROUND 3 -->
+  <div class="screen hidden" id="bg3">
+    <img class="bg" src="background4.png">
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
