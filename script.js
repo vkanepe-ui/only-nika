@@ -30,3 +30,32 @@ hintBtn.addEventListener("click", function () {
     showScreen("bg3");
   }
 });
+
+const finalCodeInput = document.querySelector("#finalCodeInput");
+const submitCodeBtn = document.querySelector("#submitCodeBtn");
+const accessDenied = document.querySelector("#accessDenied");
+const accessGranted = document.querySelector("#accessGranted");
+
+const FINAL_CODE = "systemisdown";
+
+submitCodeBtn.addEventListener("click", function () {
+  const enteredCode = finalCodeInput.value.trim().toLowerCase();
+
+  accessDenied.classList.add("hidden");
+  accessGranted.classList.add("hidden");
+
+  if (enteredCode === FINAL_CODE) {
+    accessGranted.classList.remove("hidden");
+
+    setTimeout(function () {
+      accessGranted.classList.add("hidden");
+      showScreen("bg4");
+    }, 3000);
+  } else {
+    accessDenied.classList.remove("hidden");
+
+    setTimeout(function () {
+      accessDenied.classList.add("hidden");
+    }, 3000);
+  }
+});
