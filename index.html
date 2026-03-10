@@ -9,45 +9,38 @@
 
   <!-- START SCREEN -->
   <div class="screen" id="startScreen">
-    <img class="bg" src="background1.png">
-    <img class="btn" id="startBtn" src="start_button.png">
+    <img class="bg" src="background1.png" alt="Background 1">
+    <img class="btn" id="startBtn" src="start_button.png" alt="Start Button">
   </div>
 
   <!-- BACKGROUND 1 -->
   <div class="screen hidden" id="bg1">
-    <img class="bg" src="background2.png">
-    <img class="btn" id="nextBtn" src="next_button.png">
+    <img class="bg" src="background2.png" alt="Background 2">
+    <img class="btn" id="nextBtn" src="next_button.png" alt="Next Button">
   </div>
 
   <!-- BACKGROUND 2 -->
   <div class="screen hidden" id="bg2">
-    <img class="bg" src="background3.png">
-    <img class="btn" id="hintBtn" src="hint_button.png">
+    <img class="bg" src="background3.png" alt="Background 3">
+    <img class="btn" id="hintBtn" src="hint_button.png" alt="Hint Button">
 
     <p id="hintText" class="hidden">
       Previous Rooms... <br>
       MAKE SURE THE CODE IS WRITTEN IN ALL CAPS <br>
-      Your Answer is Around the School
     </p>
-  </div>
 
-  <!-- BACKGROUND 3 -->
-  <div class="screen hidden" id="bg3">
-    <img class="bg" src="background3.png">
-
-    <input id="finalCodeInput" type="text" placeholder="Enter final code">
-    <button id="submitCodeBtn">Submit</button>
+    <input id="finalCodeInput" class="hidden" type="text" placeholder="Enter final code">
+    <button id="submitCodeBtn" class="hidden">Submit</button>
 
     <img id="accessDenied" class="result-image hidden" src="acess_denied_button.png" alt="Access Denied">
     <img id="accessGranted" class="result-image hidden" src="acess_granted_button.png" alt="Access Granted">
   </div>
 
-  <!-- BACKGROUND 4 -->
+  <!-- FINAL SCREEN -->
   <div class="screen hidden" id="bg4">
-    <img class="bg" src="background4.png">
+    <img class="bg" src="background4.png" alt="Background 4">
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>

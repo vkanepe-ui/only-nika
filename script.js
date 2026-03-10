@@ -19,24 +19,27 @@ document.querySelector("#nextBtn").addEventListener("click", function () {
 // Hint button behavior
 const hintBtn = document.querySelector("#hintBtn");
 const hintText = document.querySelector("#hintText");
-
-let hintShown = false;
-
-hintBtn.addEventListener("click", function () {
-  if (!hintShown) {
-    hintText.classList.remove("hidden");
-    hintShown = true;
-  } else {
-    showScreen("bg3");
-  }
-});
-
 const finalCodeInput = document.querySelector("#finalCodeInput");
 const submitCodeBtn = document.querySelector("#submitCodeBtn");
+
+hintBtn.addEventListener("click", function () {
+
+  // show hint text
+  hintText.classList.remove("hidden");
+
+  // show code entry
+  finalCodeInput.classList.remove("hidden");
+  submitCodeBtn.classList.remove("hidden");
+
+  // hide the hint button
+  hintBtn.style.display = "none";
+
+});
+
 const accessDenied = document.querySelector("#accessDenied");
 const accessGranted = document.querySelector("#accessGranted");
 
-const FINAL_CODE = "systemisdown";
+const FINAL_CODE = "systemisdown!";
 
 submitCodeBtn.addEventListener("click", function () {
   const enteredCode = finalCodeInput.value.trim().toLowerCase();
