@@ -88,10 +88,10 @@ body {
 
 .result-image {
   position: absolute;
-  top: 20%;
+  top: 1%;
   left: 52%;
   transform: translateX(-50%);
-  width: 700px;
+  width: 600px;
   height: auto;
   z-index: 10;
 }
