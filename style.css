@@ -1,97 +1,105 @@
 body {
   margin: 0;
   background: black;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .screen {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: min(100vw, 177.78vh);
+  height: min(56.25vw, 100vh);
+  overflow: hidden;
+  background: black;
 }
 
 .bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .btn {
   position: absolute;
-  width: 200px;
-  left: 50%;
-  bottom: 10%;
-  transform: translateX(-50%);
   cursor: pointer;
 }
-#startBtn {
-  width: 400px;
-  height: auto;
-  top: 355px;      /* replaces margin-top */
-  bottom: auto;    /* remove bottom positioning */
-}
+
 .hidden {
   display: none;
 }
-#nextBtn {
-  width: 220px;     /* or whatever size you want */
-  left: auto;       /* cancel center positioning */
-  right: 30px;      /* distance from right edge */
-  bottom: 3px;     /* distance from bottom */
-  transform: none;  /* remove translate */
+
+#startBtn {
+  width: 30%;
+  height: auto;
+  top: 47%;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+#nextBtn {
+  width: 12%;
+  height: auto;
+  right: 2%;
+  bottom: 2%;
+}
+
 #hintBtn {
-  width: 200px;
-  top: 50%;                 /* higher than center (50%) */
-  left: 52%;                /* slightly more to the right */
-  bottom: auto;
+  width: 17%;
+  height: auto;
+  top: 52%;
+  left: 52%;
   transform: translate(-50%, -50%);
 }
 #hintText {
   position: absolute;
-  top: 40%;
-  left: 52%;
+  top: 22%;
+  left: 50%;
   transform: translateX(-50%);
-  color: rgb(255, 255, 255);
-  font-size: 22px;
+  color: white;
+  font-size: 1.4vw;
   text-align: center;
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1em;
   border-radius: 10px;
-  font-family: "Courier New", monospace;
+  width: 40%;
 }
+
 #finalCodeInput {
   position: absolute;
-  top: 63%;
-  left: 52%;
+  top: 68%;
+  left: 50%;
   transform: translateX(-50%);
-  width: 300px;
-  padding: 12px;
-  font-size: 20px;
+  width: 22%;
+  padding: 0.8em;
+  font-size: 1.2vw;
   text-align: center;
   border: none;
   border-radius: 8px;
-  font-family: "Courier New", monospace;
 }
 
 #submitCodeBtn {
   position: absolute;
-  top: 70%;
-  left: 52%;
+  top: 78%;
+  left: 50%;
   transform: translateX(-50%);
-  padding: 12px 24px;
-  font-size: 18px;
-  cursor: pointer;
+  padding: 0.8em 1.5em;
+  font-size: 1vw;
   border: none;
   border-radius: 8px;
-  font-family: "Courier New", monospace;
+  cursor: pointer;
 }
 
 .result-image {
   position: absolute;
-  top: 1%;
-  left: 52%;
-  transform: translateX(-50%);
-  width: 600px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
   height: auto;
   z-index: 10;
 }
