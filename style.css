@@ -57,22 +57,24 @@ body {
 }
 #hintText {
   position: absolute;
-  top: 22%;
-  left: 50%;
+  top: 40%;
+  left: 52%;
   transform: translateX(-50%);
   color: white;
-  font-size: 1.4vw;
+  font-size: clamp(14px, 1.4vw, 28px);
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
-  padding: 1em;
+  padding: 1em 1.2em;
   border-radius: 10px;
-  width: 40%;
+  font-family: "Courier New", monospace;
+  line-height: 1.5;
+  max-width: 45%;
 }
 
 #finalCodeInput {
   position: absolute;
-  top: 68%;
-  left: 50%;
+  top: 64%;
+  left: 52%;
   transform: translateX(-50%);
   width: 22%;
   padding: 0.8em;
@@ -80,26 +82,28 @@ body {
   text-align: center;
   border: none;
   border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #submitCodeBtn {
   position: absolute;
-  top: 78%;
-  left: 50%;
+  top: 74%;
+  left: 52%;
   transform: translateX(-50%);
   padding: 0.8em 1.5em;
   font-size: 1vw;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .result-image {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 54%;
+  left: 52%;
   transform: translate(-50%, -50%);
-  width: 35%;
+  width: 49%;
   height: auto;
   z-index: 10;
 }
