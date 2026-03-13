@@ -73,10 +73,15 @@ submitCodeBtn.addEventListener("click", function () {
 
       accessGranted.classList.add("hidden");
 
-      bgMusic.pause();
-      finalMusic.play();
-
       showScreen("bg4");
+
+      bgMusic.pause();
+      bgMusic.currentTime = 0;
+
+      finalMusic.currentTime = 0;
+      finalMusic.play().catch(function(error){
+        console.log("Final music blocked:", error);
+      });
 
     }, 3000);
 
