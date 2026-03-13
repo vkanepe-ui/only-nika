@@ -27,6 +27,7 @@
     <p id="hintText" class="hidden">
       Previous Rooms... <br>
       MAKE SURE THE CODE IS WRITTEN IN ALL CAPS <br>
+      No Spaces <br>
     </p>
 
     <input id="finalCodeInput" class="hidden" type="text" placeholder="Enter final code">
@@ -40,6 +41,18 @@
   <div class="screen hidden" id="bg4">
     <img class="bg" src="background4.png" alt="Background 4">
   </div>
+
+  <audio id="bgMusic" loop>
+  <source src="background_music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="deniedSound">
+  <source src="access_denied_music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="grantedSound">
+  <source src="access_granted_music.mp3" type="audio/mpeg">
+</audio>
 
   <script src="script.js"></script>
 </body>
