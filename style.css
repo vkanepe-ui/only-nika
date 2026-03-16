@@ -73,7 +73,7 @@ body {
 
 #finalCodeInput {
   position: absolute;
-  top: 64%;
+  top: 70%;
   left: 52%;
   transform: translateX(-50%);
   width: 22%;
@@ -87,7 +87,7 @@ body {
 
 #submitCodeBtn {
   position: absolute;
-  top: 74%;
+  top: 79%;
   left: 52%;
   transform: translateX(-50%);
   padding: 0.8em 1.5em;
