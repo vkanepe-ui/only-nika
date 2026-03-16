@@ -8,6 +8,23 @@ const finalMusic = document.querySelector("#finalMusic");
 deniedSound.volume = 0.8;
 grantedSound.volume = 0.8;
 
+function unlockAudio() {
+  deniedSound.play().then(() => {
+    deniedSound.pause();
+    deniedSound.currentTime = 0;
+  }).catch(()=>{});
+
+  grantedSound.play().then(() => {
+    grantedSound.pause();
+    grantedSound.currentTime = 0;
+  }).catch(()=>{});
+
+  finalMusic.play().then(() => {
+    finalMusic.pause();
+    finalMusic.currentTime = 0;
+  }).catch(()=>{});
+}
+
 function showScreen(id) {
   document.querySelectorAll(".screen").forEach(screen => {
     screen.classList.add("hidden");
@@ -17,9 +34,14 @@ function showScreen(id) {
 }
 
 // Start -> Background 1
-document.querySelector("#startBtn").addEventListener("click", function () {
-  bgMusic.play();
+startBtn.addEventListener("click", function () {
+
+  unlockAudio();   // unlock all other sounds
+
+  bgMusic.play().catch(()=>{});
+
   showScreen("bg1");
+
 });
 
 // Next -> Background 2
